@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="design.css">
+		<link rel="icon" href="Assets/Brain.png">
+		<title> Codebreaker | Rules</title>
+	</head>
+	<body>
+		<div class="inside_box">
+			<header>
+				<div id="Title">CODEBREAKER</div>
+				<div id="punchLine">Can you break it?</div>	
+			</header>
+			
+			
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="game.html">Let's Play</a></li>
+					<li class="active_nav"><a href=#>How-to</a></li>
+					<li><a href="reference.html">Reference</a></li>
+					<li id="about"><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+			
+			<article id = "rules">
+				<h1>HOW TO PLAY</h1>
+				You will see a text box on the right. You have to fill it before you play.<br><br>
+			<img src="Assets/1.jpg" alt="Screenshot of screen"> <br>
+				If you want to play by yourself, fill your name in First Player field, and leave the Second Player field empty <br>
+				If you fill both or leave both empty, it will be considered as 2 players.<br>
+				Default names are Player 1 and Player 2.<br>
+				Also, fill the Target Score field. Fill it with integer between 25-100. <br>
+				Click Play to play the game, and the game will appear on the left.<br><br>
+			<img src="Assets/2.jpg" alt="Screenshot of screen"> <br>
+				As you can see, the first player’s name is in blue. It means that it is player 1’s turn.<br>
+				This board game contains 3 parts : <br>
+				- The 5x12 big circles, that is reserved for placing player’s answer.<br>
+				- The 5x12 small circles, that is reserved for showing the correctness of the answer.<br>
+				- And 8 different colours and delete button, to choose or remove answer.<br>
+				
+				<h1>GAME</h1>
+				The purpose of this game is to guess the code (5 different colour pegs) in less than 12 trials (the lesser, the better).<br>
+				Player must click one of the 8 colours provided on the right. <br>
+				The game start on top of the board.<br>
+				Once player click the button, it will move the colour into the big circle.<br>
+				Player can delete the previous answer in each trial. But, once the player has chosen 5 colours<br>
+				the answer will be marked (cannot be removed anymore).<br>
+				The mark will be shown like following : <br>
+				-	Black = correct answer and correct position <br>
+				-	White = correct answer and wrong position <br>
+				-	Blank = wrong answer <br>
+				Once the player achieves 5 black marks, the player win the round. <br>
+				Points will be received depends on how many trials needed. <br>
+				-	1 trial = 7 points <br>
+				-	2 – 4 trials = 5 points<br>
+				-	5 – 8 trials = 4 points <br>
+				-	9 – 12 trials = 3 points <br>
+				-	Cannot solve = 0 point.<br>
+				If the game is 2 players, after each round, it will be another player’s turn.<br>
+				If any player can achieve at least as written in Target Score, he/she win.<br>
+				In the end of the game, player will be asked to restart the game (type “Y” or “y”), or not (Type “N” or “n”)<br>
+				P.S. : Chrome cannot play this game<br>
+				
+			</article>
+			</div>
+			
+			
+			<footer>
+				<p id="current_time">Current time : </p>
+				<p id="last_edit">Last edited : </p>
+				
+				<script src="time.js"></script>
+			</footer>
+			
+		</body>
+	</html>	

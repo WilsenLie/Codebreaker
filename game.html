@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="design.css">
+		<link rel="icon" href="Assets/Brain.png">
+		<title> Codebreaker | Play</title>
+	</head>
+	<body>
+		<div class="inside_box">
+			<header>
+				<div id="Title">CODEBREAKER</div>
+				<div id="punchLine">Can you break it?</div>
+			</header>
+			
+			
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li class="active_nav"><a href=#>Let's Play</a></li>
+					<li><a href="rules.html">How-to</a></li>
+					<li><a href="reference.html">Reference</a></li>
+					<li id="about"><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+			
+			<article id="screen">
+				<h2>The Game</h2>
+				<canvas id="gameCanvas" width="550" height="550" style="border:1px solid #000000;">
+					Doesn't support HTML5
+				</canvas>
+				
+				<form id="askName">
+					First player:<br>
+					<input type="text" name="firstplayer" id = "p1" maxlength="10"> <br>
+					Second player:<br>
+					<input type="text" name="secondplayer" id="p2" maxlength="10"> <br><br>
+					Target Score: (25-100) <br>
+					<input type="text" name="targetScore" id="targetScore"><br><br>
+					<input type="submit" value="Play" onclick="submitNames()">
+				</form>
+				<div id="printNew">
+					<p id = "target2name"></p>
+					<p id = "target2"></p>
+					<p id = "p1Name"></p>
+					<p id = "p1Score"></p>
+					<p id = "p2Name"></p>
+					<p id = "p2Score"></p>
+				</div>
+				<script src="games3.js"></script>
+			</article>
+		</div>
+		
+		<footer>
+			<p id="current_time">Current time : </p>
+			<p id="last_edit">Last edited : </p>
+			
+			<script src="time.js"></script>
+		</footer>
+		
+	</body>
+</html>													
